@@ -119,3 +119,14 @@ ul li span {
 ul li span:hover {
   background: #edeef0;
 }
+
+/*=============== BREAKPOINTS ===============*/
+@media screen and (max-width: 600px) {
+  .todolist {
+    width: 400px;
+  }
+  .todo__adc button {
+    width: 60%;
+    padding: 16px 24px;
+  }
+}
