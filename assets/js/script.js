@@ -5,7 +5,6 @@ const inputBox = document.querySelector("#input-box"),
 
 const teste = "Teste";
 
-
 function addTask() {
   event.preventDefault();
   // Verifica se o campo foi preenchido
@@ -15,11 +14,15 @@ function addTask() {
     // Adiciona a nova task a lista de tasks.
     let li = document.createElement("li");
     li.innerHTML = inputBox.value;
-    listContainer.appendChild(li);
     li.classList.add("item-list");
+    li.setAttribute("draggable", true);
+    let i = document.createElement("i");
+    i.classList.add("uil", "uil-draggabledots");
     let span = document.createElement("span");
     span.innerHTML = "\u00d7";
     li.appendChild(span);
+    li.appendChild(i);
+    listContainer.appendChild(li);
   }
   inputBox.value = "";
   saveTasks();
