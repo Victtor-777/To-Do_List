@@ -70,14 +70,14 @@ body {
   cursor: pointer;
 }
 
-.item-list {
+.item{
   margin-bottom: 8px;
   box-sizing: border-box;
   display: flex;
   align-items: center;
 }
 
-.list__container .item-list {
+.list__container .item {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -85,10 +85,14 @@ body {
   border: 1px solid #ccc;
 }
 
-.item-list > i {
+.item > i {
   /* position: absolute; */
   margin-right: 32px;
   cursor: move;
+}
+
+.item.dragging {
+  opacity: 0;
 }
 
 ul li {
@@ -122,7 +126,7 @@ ul li.cheked::before {
   background-image: url("../img/checked.png");
 }
 
-.item-list span {
+.item span {
   display: flex;
   align-items: center;
   justify-content: center;

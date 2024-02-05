@@ -3,7 +3,15 @@ const inputBox = document.querySelector("#input-box"),
   button = document.querySelector(".todo__adc button");
   // Teste de branch
 
-const teste = "Teste";
+const items = document.querySelectorAll("li .item");
+
+items.forEach(item => {
+  item.addEventListener("dragstart", () => {
+    setTimeout(() => item.classList.add("dragging"), 0)
+    console.log(item)
+  })
+  item.addEventListener("dragend", () => item.classList.remove("dragging"));
+})
 
 function addTask() {
   event.preventDefault();
@@ -14,7 +22,7 @@ function addTask() {
     // Adiciona a nova task a lista de tasks.
     let li = document.createElement("li");
     li.innerHTML = inputBox.value;
-    li.classList.add("item-list");
+    li.classList.add("item");
     li.setAttribute("draggable", true);
     let i = document.createElement("i");
     i.classList.add("uil", "uil-draggabledots");
