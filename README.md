@@ -3,16 +3,15 @@
 </p>
 
 # 📝 To Do List
-Projeto de um conversor de moedas de vários países. Utiliza uma API para pegar os dados em tempo real.
+Projeto de um To Do List, você escreve as suas tarefas e salva elas no LocalStored do navegador;
 
-- Veja o projeto: [Live Preview](https://victtor-currency-converter.vercel.app/)
+- Veja o projeto: [Live Preview](https://victtor-to-do-list.vercel.app/)
 
 ## ⚙️ Funcionalidades
 
-- [x] Converte as moedas de vários países;
-- [x] Com um clique pode alternar a conversão;
-- [x] Pega os valores atuais utilizando uma API;
-- [x] Site totalmente responsivo e intuitivo, com um design clean;
+- [x] Salva as tarefas no LocalStored;
+- [x] Pode marcar como concluída ou apagar;
+- [ ] (Em breve) Função Drag and Drop, para puxar e colocar a tarefa onde quiser;
 
 ## 🚀 Tecnologias
 
@@ -22,4 +21,4 @@ Projeto de um conversor de moedas de vários países. Utiliza uma API para pegar
 
 ## 📝 Considerações
 
-Fiz esse projeto para o meu portfolio para treinar meus conhecimentos em funções assincronas, API's e requisições que normalmente serão feitas no dia a dia;
+Fiz esse projeto para o meu portfolio para treinar meus conhecimentos em Javascript e manipulação do DOM;
