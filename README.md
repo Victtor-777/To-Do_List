@@ -3,7 +3,7 @@
 </p>
 
 # 📝 To Do List
-Projeto de um To Do List, você escreve as suas tarefas e salva elas no LocalStored do navegador;
+Projeto de um To Do List, bem simples, você escreve as suas tarefas e elas são salvas no LocalStored do navegador, assim você não perde elas ao dar reload na página;
 
 - Veja o projeto: [Live Preview](https://victtor-to-do-list.vercel.app/)
 
